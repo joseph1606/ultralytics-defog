@@ -17,9 +17,6 @@ Examples:
     >>> subprocess.run(f"onnxslim {f} {f} && open {f}", shell=True, check=True)  # pip install onnxslim
 """
 
-# NEW CODE
-from .defog import DefogModule, DarkChannelPrior, AODNet, FFANet
-
 from .block import (
     C1,
     C2,
@@ -182,13 +179,6 @@ __all__ = (
     "YOLOEDetect",
     "YOLOESegment",
     "v10Detect",
-
-    # NEW CODE
-    'DefogModule',
-    'DarkChannelPrior', 
-    'AODNet',
-    'FFANet'
-
 
 
     
