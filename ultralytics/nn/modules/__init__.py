@@ -16,6 +16,8 @@ Examples:
     >>> torch.onnx.export(m, x, f)
     >>> subprocess.run(f"onnxslim {f} {f} && open {f}", shell=True, check=True)  # pip install onnxslim
 """
+# NEW CODE: IMPORTING DEFOG MODULE
+from .defog import DCP
 
 from .block import (
     C1,
@@ -180,6 +182,9 @@ __all__ = (
     "YOLOESegment",
     "v10Detect",
 
+
+    # NEW CODE: ADDING DCP
+    "DCP",
 
     
 )
